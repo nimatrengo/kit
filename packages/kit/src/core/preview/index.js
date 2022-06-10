@@ -24,6 +24,7 @@ export const sveltekit_plugin = {
 		// defaults
 		vite_config.preview = vite_config.preview || {};
 		vite_config.preview.strictPort = vite_config.preview.strictPort ?? true;
+		vite_config.spa = vite_config.spa ?? false;
 
 		config = await load_config();
 	},
